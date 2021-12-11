@@ -131,5 +131,5 @@ showRandomPoster();
 
 function unhideForm() {
   posterForm.classList.toggle("hidden");
-  //mainPage.classList.toggle("hidden")
+  mainPoster.classList.toggle("hidden")
 }
