@@ -1,15 +1,27 @@
 // query selector variables go here 👇
+// Main page
 var posterTitles = document.querySelector('.poster-title');
 var posterQuotes = document.querySelector('.poster-quote');
 var posterImages = document.querySelector(".poster-img");
 var showRandom = document.querySelector(".show-random");
 var showFormButton = document.querySelector(".show-form");
+
+//Poster form
 var posterForm = document.querySelector(".poster-form");
 var mainPoster = document.querySelector(".main-poster");
+
+//Show saved posters
 var savedPostersButton = document.querySelector(".show-saved");
 var savedPostersArea = document.querySelector(".saved-posters");
 var showMainButton = document.querySelector(".show-main");
-var backToMainButton = document.querySelector(".back-to-main")
+var backToMainButton = document.querySelector(".back-to-main");
+
+//Make your own poster
+var imageURLBox = document.querySelector("#poster-image-url");
+var titleURLBox = document.querySelector("#poster-title");
+var quoteURLBox = document.querySelector("#poster-quote");
+var showMyPosterButton = document.querySelector(".make-poster");
+
 
 // we've provided you with some data to work with 👇
 var images = [
@@ -121,6 +133,7 @@ showFormButton.addEventListener('click', unhideForm);
 savedPostersButton.addEventListener('click', unhideSavedPosters);
 showMainButton.addEventListener('click', unhideForm);
 backToMainButton.addEventListener('click', unhideSavedPosters);
+showMyPosterButton.addEventListener('click', showMyPoster);
 
 // functions and event handlers go here 👇
 // (we've provided one for you to get you started)!
@@ -144,4 +157,12 @@ function unhideForm() {
 function unhideSavedPosters() {
   savedPostersArea.classList.toggle("hidden");
   mainPoster.classList.toggle("hidden");
+}
+
+function showMyPoster() {
+  event.preventDefault();
+  posterImages.src = imageURLBox.value
+  posterQuotes.innerText = titleURLBox.value
+  posterTitles.innerText = quoteURLBox.value
+  unhideForm()
 }
