@@ -1,11 +1,11 @@
 // query selector variables go here 👇
 var posterTitles = document.querySelector('.poster-title');
-
 var posterQuotes = document.querySelector('.poster-quote');
-
 var posterImages = document.querySelector(".poster-img");
-
 var showRandom = document.querySelector(".show-random");
+var showFormButton = document.querySelector(".show-form");
+var posterForm = document.querySelector(".poster-form");
+var mainPoster = document.querySelector(".main-poster");
 
 // we've provided you with some data to work with 👇
 var images = [
@@ -113,6 +113,7 @@ var currentPoster;
 
 // event listeners go here 👇
 showRandom.addEventListener('click', showRandomPoster);
+showFormButton.addEventListener('click', unhideForm);
 
 // functions and event handlers go here 👇
 // (we've provided one for you to get you started)!
@@ -127,3 +128,8 @@ function showRandomPoster() {
 }
 
 showRandomPoster();
+
+function unhideForm() {
+  posterForm.classList.toggle("hidden");
+  //mainPage.classList.toggle("hidden")
+}
