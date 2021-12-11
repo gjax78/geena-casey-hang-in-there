@@ -22,6 +22,13 @@ var titleURLBox = document.querySelector("#poster-title");
 var quoteURLBox = document.querySelector("#poster-quote");
 var showMyPosterButton = document.querySelector(".make-poster");
 
+//new instances
+var userPoster = new Poster (
+  imageURLBox.value,
+  titleURLBox.value,
+  quoteURLBox.value
+  )
+
 
 // we've provided you with some data to work with 👇
 var images = [
