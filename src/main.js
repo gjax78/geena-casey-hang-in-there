@@ -153,7 +153,9 @@ function storeCurrentPoster() {
 }
 
 function saveThisPoster() {
+  if (!savedPosters.includes(currentPoster)) {
     savedPosters.push(currentPoster)
+  }
 }
 
 function showRandomPoster() {
