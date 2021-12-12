@@ -152,6 +152,10 @@ function storeCurrentPoster() {
   )
 }
 
+function saveThisPoster() {
+    savedPosters.push(currentPoster)
+}
+
 function showRandomPoster() {
   posterImages.src = images[getRandomIndex(images)];
   posterTitles.innerText = titles[getRandomIndex(titles)];
