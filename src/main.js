@@ -136,6 +136,7 @@ savedPostersButton.addEventListener('click', unhideSavedPosters);
 showMainButton.addEventListener('click', unhideForm);
 backToMainButton.addEventListener('click', unhideSavedPosters);
 showMyPosterButton.addEventListener('click', showMyPoster);
+saveThisPosterButton.addEventListener('click', saveThisPoster);
 
 // functions and event handlers go here 👇
 // (we've provided one for you to get you started)!
