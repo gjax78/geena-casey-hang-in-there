@@ -177,6 +177,9 @@ function showMyPoster() {
   posterImages.src = imageURLBox.value;
   posterTitles.innerText = titleBox.value;
   posterQuotes.innerText = quoteBox.value;
-
+  storeCurrentPoster();
+  images.push(posterImages.src);
+  titles.push(posterTitles.innerText);
+  quotes.push(posterQuotes.innerText);
   unhideForm();
 }
