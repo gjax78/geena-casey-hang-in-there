@@ -22,9 +22,8 @@ var titleBox = document.querySelector("#poster-title");
 var quoteBox = document.querySelector("#poster-quote");
 var showMyPosterButton = document.querySelector(".make-poster");
 
-//new instances
-
-
+//Saved posters
+var saveThisPosterButton = document.querySelector('.save-poster');
 
 // we've provided you with some data to work with 👇
 var images = [
@@ -159,8 +158,6 @@ function showRandomPoster() {
 }
 
 showRandomPoster();
-
-
 
 function unhideForm() {
   posterForm.classList.toggle("hidden");
