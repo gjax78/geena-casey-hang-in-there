@@ -162,7 +162,18 @@ function saveThisPoster() {
   }
 }
 
-
+function viewSavedPosterGrid () {
+  savedPosterGrid.innerHTML = ``
+  for (i = 0; i < savedPosters.length; i++) {
+    savedPosterGrid.innerHTML += `
+    <article class ="mini-poster">
+    <img class ="poster-image" src="${savedPosters[i].imageURL}" alt="nothin' to see here">
+    <h2 class ="poster-title">${savedPosters[i].title}</h2>
+    <h4 class ="poster-quote">${savedPosters[i].quote}</h4>
+    </article>
+    `
+  }
+}
 
 function showRandomPoster() {
   posterImages.src = images[getRandomIndex(images)];
