@@ -18,16 +18,12 @@ var backToMainButton = document.querySelector(".back-to-main");
 
 //Make your own poster
 var imageURLBox = document.querySelector("#poster-image-url");
-var titleURLBox = document.querySelector("#poster-title");
-var quoteURLBox = document.querySelector("#poster-quote");
+var titleBox = document.querySelector("#poster-title");
+var quoteBox = document.querySelector("#poster-quote");
 var showMyPosterButton = document.querySelector(".make-poster");
 
 //new instances
-var userPoster = new Poster (
-  imageURLBox.value,
-  titleURLBox.value,
-  quoteURLBox.value
-  )
+
 
 
 // we've provided you with some data to work with 👇
@@ -168,8 +164,16 @@ function unhideSavedPosters() {
 
 function showMyPoster() {
   event.preventDefault();
-  posterImages.src = imageURLBox.value
-  posterQuotes.innerText = titleURLBox.value
-  posterTitles.innerText = quoteURLBox.value
-  unhideForm()
+  var userPoster = new Poster (
+    posterImages.src,
+    posterTitles.innerText,
+    posterQuotes.innerText,
+    )
+  posterImages.src = imageURLBox.value;
+  images.push(posterImages.src);
+  posterQuotes.innerText = titleBox.value;
+  quotes.push(posterQuotes.innerText);
+  posterTitles.innerText = quoteBox.value;
+  titles.push(posterTitles.innerText);
+  unhideForm();
 }
