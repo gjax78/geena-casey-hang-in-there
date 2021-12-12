@@ -18,9 +18,12 @@ var backToMainButton = document.querySelector(".back-to-main");
 
 //Make your own poster
 var imageURLBox = document.querySelector("#poster-image-url");
-var titleURLBox = document.querySelector("#poster-title");
-var quoteURLBox = document.querySelector("#poster-quote");
+var titleBox = document.querySelector("#poster-title");
+var quoteBox = document.querySelector("#poster-quote");
 var showMyPosterButton = document.querySelector(".make-poster");
+
+//new instances
+
 
 
 // we've provided you with some data to work with 👇
@@ -141,6 +144,14 @@ function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
 }
 
+function storeCurrentPoster() {
+  currentPoster = new Poster (
+    posterImages.src,
+    posterTitles.innerText,
+    posterQuotes.innerText
+  )
+}
+
 function showRandomPoster() {
   posterImages.src = images[getRandomIndex(images)];
   posterTitles.innerText = titles[getRandomIndex(titles)];
@@ -148,6 +159,8 @@ function showRandomPoster() {
 }
 
 showRandomPoster();
+
+
 
 function unhideForm() {
   posterForm.classList.toggle("hidden");
@@ -161,8 +174,12 @@ function unhideSavedPosters() {
 
 function showMyPoster() {
   event.preventDefault();
-  posterImages.src = imageURLBox.value
-  posterQuotes.innerText = titleURLBox.value
-  posterTitles.innerText = quoteURLBox.value
-  unhideForm()
+  posterImages.src = imageURLBox.value;
+  posterTitles.innerText = titleBox.value;
+  posterQuotes.innerText = quoteBox.value;
+  storeCurrentPoster();
+  images.push(posterImages.src);
+  titles.push(posterTitles.innerText);
+  quotes.push(posterQuotes.innerText);
+  unhideForm();
 }
