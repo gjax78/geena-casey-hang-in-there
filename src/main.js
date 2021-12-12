@@ -2,28 +2,29 @@
 // Main page
 var posterTitles = document.querySelector('.poster-title');
 var posterQuotes = document.querySelector('.poster-quote');
-var posterImages = document.querySelector(".poster-img");
-var showRandom = document.querySelector(".show-random");
-var showFormButton = document.querySelector(".show-form");
+var posterImages = document.querySelector('.poster-img');
+var showRandom = document.querySelector('.show-random');
+var showFormButton = document.querySelector('.show-form');
 
 //Poster form
-var posterForm = document.querySelector(".poster-form");
-var mainPoster = document.querySelector(".main-poster");
+var posterForm = document.querySelector('.poster-form');
+var mainPoster = document.querySelector('.main-poster');
 
 //Show saved posters
-var savedPostersButton = document.querySelector(".show-saved");
-var savedPostersArea = document.querySelector(".saved-posters");
-var showMainButton = document.querySelector(".show-main");
-var backToMainButton = document.querySelector(".back-to-main");
+var savedPostersButton = document.querySelector('.show-saved');
+var savedPostersArea = document.querySelector('.saved-posters');
+var showMainButton = document.querySelector('.show-main');
+var backToMainButton = document.querySelector('.back-to-main');
 
 //Make your own poster
-var imageURLBox = document.querySelector("#poster-image-url");
-var titleBox = document.querySelector("#poster-title");
-var quoteBox = document.querySelector("#poster-quote");
+var imageURLBox = document.querySelector('#poster-image-url');
+var titleBox = document.querySelector('#poster-title');
+var quoteBox = document.querySelector('#poster-quote');
 var showMyPosterButton = document.querySelector(".make-poster");
 
 //Saved posters
 var saveThisPosterButton = document.querySelector('.save-poster');
+var savedPosterGrid = document.querySelector('.saved-posters-grid');
 
 // we've provided you with some data to work with 👇
 var images = [
@@ -158,6 +159,8 @@ function saveThisPoster() {
   }
 }
 
+
+
 function showRandomPoster() {
   posterImages.src = images[getRandomIndex(images)];
   posterTitles.innerText = titles[getRandomIndex(titles)];
@@ -170,6 +173,7 @@ function unhideForm() {
   posterForm.classList.toggle("hidden");
   mainPoster.classList.toggle("hidden");
 }
+
 
 function unhideSavedPosters() {
   savedPostersArea.classList.toggle("hidden");
