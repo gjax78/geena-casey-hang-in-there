@@ -22,9 +22,8 @@ var titleBox = document.querySelector("#poster-title");
 var quoteBox = document.querySelector("#poster-quote");
 var showMyPosterButton = document.querySelector(".make-poster");
 
-//new instances
-
-
+//Saved posters
+var saveThisPosterButton = document.querySelector('.save-poster');
 
 // we've provided you with some data to work with 👇
 var images = [
@@ -137,6 +136,7 @@ savedPostersButton.addEventListener('click', unhideSavedPosters);
 showMainButton.addEventListener('click', unhideForm);
 backToMainButton.addEventListener('click', unhideSavedPosters);
 showMyPosterButton.addEventListener('click', showMyPoster);
+saveThisPosterButton.addEventListener('click', saveThisPoster);
 
 // functions and event handlers go here 👇
 // (we've provided one for you to get you started)!
@@ -152,6 +152,12 @@ function storeCurrentPoster() {
   )
 }
 
+function saveThisPoster() {
+  if (!savedPosters.includes(currentPoster)) {
+    savedPosters.push(currentPoster)
+  }
+}
+
 function showRandomPoster() {
   posterImages.src = images[getRandomIndex(images)];
   posterTitles.innerText = titles[getRandomIndex(titles)];
@@ -159,8 +165,6 @@ function showRandomPoster() {
 }
 
 showRandomPoster();
-
-
 
 function unhideForm() {
   posterForm.classList.toggle("hidden");
