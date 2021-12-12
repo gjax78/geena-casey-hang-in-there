@@ -133,7 +133,10 @@ var currentPoster;
 // event listeners go here 👇
 showRandom.addEventListener('click', showRandomPoster);
 showFormButton.addEventListener('click', unhideForm);
-savedPostersButton.addEventListener('click', unhideSavedPosters);
+savedPostersButton.addEventListener('click', function(){
+  viewSavedPosterGrid();
+  unhideSavedPosters()
+});
 showMainButton.addEventListener('click', unhideForm);
 backToMainButton.addEventListener('click', unhideSavedPosters);
 showMyPosterButton.addEventListener('click', showMyPoster);
