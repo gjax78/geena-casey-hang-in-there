@@ -8,8 +8,10 @@ This webpage uses preloaded data in the HTML, CSS and Javascript and user inputt
 ​
 Geena Jackson - [GitHub](https://github.com/gjax78)
 ​
+
 Casey Halstead - [Github](https://github.com/chalstead16)
 ​
+
 Geena and Casey partnered to create this project while at Turing School of Software and Design. We're excited to share our code with the coding community. Feel free to fork or create a pull request of this project to play around or add functionality. Let your creativity be your motivation!
 ​
 ​
@@ -59,7 +61,7 @@ The Project Roadmap shows the iteration steps we completed in this project. Plea
 ​
 #### Iteration 4 - Deleting Saved Posters
 ​
-*Note to reader:  This script does not currently have this funcationality, but we've included these steps for you to try on your own!*
+*Note to reader:  This script does not currently have this functionality, but we've included these steps for you to try on your own!*
 ​
 - [ ] From the saved posters view, if a user double clicks a saved poster, it will be deleted
   - [ ] `onclick` functionality should not be used in any HTML code - all functionality should be through JavaScript.
@@ -70,7 +72,7 @@ The Project Roadmap shows the iteration steps we completed in this project. Plea
 ​
 1. Click this [link](https://gjax78.github.io/geena-casey-hang-in-there/) to load Hang In There. You will see a randomly selected motivational poster on the main page.
 ​
-#### <img src="/Users/catherinehalstead/Library/Application Support/typora-user-images/Screen Shot 2021-12-11 at 9.58.52 PM.png" alt="Screen Shot 2021-12-11 at 9.58.52 PM"  />
+#### <img src="https://user-images.githubusercontent.com/91504411/145735811-4e02f701-1a04-450f-9cf3-0c2bece5e231.png" alt="Screen Shot 2021-12-11 at 9.58.52 PM"  />
 ​
 ​
 ​
@@ -78,7 +80,7 @@ The Project Roadmap shows the iteration steps we completed in this project. Plea
 ​
 1. Click "Show Another Random Poster" to generate a new motivational poster on the main page.
 ​
-![Screen Shot 2021-12-12 at 5.50.09 PM](/Users/catherinehalstead/Library/Application Support/typora-user-images/Screen Shot 2021-12-12 at 5.50.09 PM.png)
+![Screen Shot 2021-12-12 at 5.50.09 PM](https://user-images.githubusercontent.com/91504411/145735843-278c13e7-1b81-46c8-9bad-4fb8a7ee3dfb.png)
 ​
 ​
 ​
@@ -98,7 +100,7 @@ The Project Roadmap shows the iteration steps we completed in this project. Plea
 ​
 5. Click "Show my poster" to see your custom poster on the main page.
 ​
-![Screen Shot 2021-12-12 at 5.35.01 PM](/Users/catherinehalstead/Library/Application Support/typora-user-images/Screen Shot 2021-12-12 at 5.35.01 PM.png)
+![Screen Shot 2021-12-12 at 5.35.01 PM](https://user-images.githubusercontent.com/91504411/145735902-e561f3d7-f128-46bd-b372-782de966db28.png)
 ​
 ​
 ​
@@ -106,7 +108,7 @@ The Project Roadmap shows the iteration steps we completed in this project. Plea
 ​
 1. From the main page click "Save This Poster" button to save your newly created poster.
 ​
-![Screen Shot 2021-12-12 at 5.44.05 PM](/Users/catherinehalstead/Library/Application Support/typora-user-images/Screen Shot 2021-12-12 at 5.44.05 PM.png)
+![Screen Shot 2021-12-12 at 5.44.05 PM](https://user-images.githubusercontent.com/91504411/145735916-ede00d02-7027-4cd8-bfcf-538f98f699dd.png)
 ​
 ​
 ​
@@ -114,4 +116,4 @@ The Project Roadmap shows the iteration steps we completed in this project. Plea
 ​
 1. To view your saved poster, click "Show Saved Posters". Note, you cannot save the exact same poster twice.
 ​
-![Screen Shot 2021-12-12 at 5.47.08 PM](/Users/catherinehalstead/Library/Application Support/typora-user-images/Screen Shot 2021-12-12 at 5.47.08 PM.png)
+![Screen Shot 2021-12-12 at 5.47.08 PM](https://user-images.githubusercontent.com/91504411/145735932-9e78070b-302e-4c55-9b8a-f668b722946b.png)
