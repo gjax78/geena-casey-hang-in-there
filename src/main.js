@@ -163,7 +163,7 @@ function saveThisPoster() {
 }
 
 function viewSavedPosterGrid () {
-  savedPosterGrid.innerHTML = ``
+  savedPosterGrid.innerHTML = ``;
   for (i = 0; i < savedPosters.length; i++) {
     savedPosterGrid.innerHTML += `
     <article class ="mini-poster">
@@ -188,7 +188,6 @@ function unhideForm() {
   mainPoster.classList.toggle("hidden");
 }
 
-
 function unhideSavedPosters() {
   savedPostersArea.classList.toggle("hidden");
   mainPoster.classList.toggle("hidden");
@@ -200,8 +199,11 @@ function showMyPoster() {
   posterTitles.innerText = titleBox.value;
   posterQuotes.innerText = quoteBox.value;
   storeCurrentPoster();
+  unhideForm();
+}
+
+function saveToSavedPosters() {
   images.push(posterImages.src);
   titles.push(posterTitles.innerText);
   quotes.push(posterQuotes.innerText);
-  unhideForm();
 }
