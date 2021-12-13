@@ -179,6 +179,7 @@ function showRandomPoster() {
   posterImages.src = images[getRandomIndex(images)];
   posterTitles.innerText = titles[getRandomIndex(titles)];
   posterQuotes.innerText = quotes[getRandomIndex(quotes)];
+  storeCurrentPoster();
 }
 
 showRandomPoster();
